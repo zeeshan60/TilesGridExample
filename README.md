@@ -2,7 +2,7 @@
 UICollectionView flowlayout sample
 
 
-Projects uses pods.
+Project uses pods.
 - Alamofire
 - AlignedCollectionViewFlowLayout
 
