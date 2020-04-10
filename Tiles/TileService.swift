@@ -13,6 +13,7 @@ class TileService: NSObject {
     
     static let service : TileService = TileService()
     static let TILE_SERVICE_HOST = "http://localhost:9235"
+    
     static let GET_TILES_PATH = "tiles"
     
     static let POST_TILE_SELECTION_PATH = "selection"

@@ -12,3 +12,4 @@ Few Assumptions:
 - Tiles are sorted descending based on priority
 - Using left alignment of tiles in case there is any free space in a row
 
+Host is localhost. Can be chnaged in TileService.swift
