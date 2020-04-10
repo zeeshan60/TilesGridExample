@@ -22,6 +22,11 @@ class TilesTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let tile: Tile = Tile(id: "123", label: "great label", priority: 0.0)
+        let json = JSONHelpers.toJSON(obj: tile)
+        XCTAssertNotNil(json)
+        let tileFromJson : Tile = JSONHelpers.fromJSON(json: json!)!;
+        print(tileFromJson)
     }
 
     func testPerformanceExample() {

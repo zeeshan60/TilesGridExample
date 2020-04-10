@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (5.1.0)
+  - AlignedCollectionViewFlowLayout (1.1.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.1)
+  - AlignedCollectionViewFlowLayout
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlignedCollectionViewFlowLayout
+
+SPEC CHECKSUMS:
+  Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
+  AlignedCollectionViewFlowLayout: ee2ef451e741ec08f8e0967d828001e2f051c20a
+
+PODFILE CHECKSUM: 62a5dbb26b0651cac1fa00e73d915d049c0686fe
+
+COCOAPODS: 1.8.4

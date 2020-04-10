@@ -1,0 +1,6 @@
+framework module Pods_Tiles_TilesUITests {
+  umbrella header "Pods-Tiles-TilesUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

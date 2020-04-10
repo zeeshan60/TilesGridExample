@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11852501907407231DA8DE17 /* Pods_Tiles_TilesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A9C190A3F5782E2A43979A /* Pods_Tiles_TilesUITests.framework */; };
 		2BC34C7D2440751600F53DCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC34C7C2440751600F53DCD /* AppDelegate.swift */; };
 		2BC34C7F2440751600F53DCD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC34C7E2440751600F53DCD /* SceneDelegate.swift */; };
 		2BC34C812440751600F53DCD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC34C802440751600F53DCD /* ViewController.swift */; };
@@ -15,6 +16,17 @@
 		2BC34C892440751B00F53DCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BC34C872440751B00F53DCD /* LaunchScreen.storyboard */; };
 		2BC34C942440751B00F53DCD /* TilesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC34C932440751B00F53DCD /* TilesTests.swift */; };
 		2BC34C9F2440751B00F53DCD /* TilesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC34C9E2440751B00F53DCD /* TilesUITests.swift */; };
+		2BC34CAF244077E500F53DCD /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC34CAE244077E500F53DCD /* Tile.swift */; };
+		2BC34CB02440917900F53DCD /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC34CAE244077E500F53DCD /* Tile.swift */; };
+		2BC34CB22440B55F00F53DCD /* TileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC34CB12440B55F00F53DCD /* TileCell.swift */; };
+		2BC34CB42440B74800F53DCD /* TileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC34CB32440B74800F53DCD /* TileService.swift */; };
+		2BC34CB52440B74800F53DCD /* TileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC34CB32440B74800F53DCD /* TileService.swift */; };
+		2BC34CB72440C82500F53DCD /* SubmitTileResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC34CB62440C82500F53DCD /* SubmitTileResponseModel.swift */; };
+		2BC34CB82440C82500F53DCD /* SubmitTileResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC34CB62440C82500F53DCD /* SubmitTileResponseModel.swift */; };
+		2BC34CBA2440E6E300F53DCD /* JSONHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC34CB92440E6E300F53DCD /* JSONHelpers.swift */; };
+		2BC34CBB2440E6E300F53DCD /* JSONHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC34CB92440E6E300F53DCD /* JSONHelpers.swift */; };
+		9EF7866F84499748B0953453 /* Pods_Tiles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD67F5591A92050A9D400157 /* Pods_Tiles.framework */; };
+		DC459222BA84A699CE420111 /* Pods_TilesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 809C11B4FCF4C644ACAE4E61 /* Pods_TilesTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		076C0B1B15E2C2091334FBDC /* Pods-Tiles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tiles.release.xcconfig"; path = "Target Support Files/Pods-Tiles/Pods-Tiles.release.xcconfig"; sourceTree = "<group>"; };
+		08A9C190A3F5782E2A43979A /* Pods_Tiles_TilesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tiles_TilesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BC34C792440751600F53DCD /* Tiles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tiles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BC34C7C2440751600F53DCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BC34C7E2440751600F53DCD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +63,18 @@
 		2BC34C9A2440751B00F53DCD /* TilesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TilesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BC34C9E2440751B00F53DCD /* TilesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TilesUITests.swift; sourceTree = "<group>"; };
 		2BC34CA02440751B00F53DCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BC34CAE244077E500F53DCD /* Tile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+		2BC34CB12440B55F00F53DCD /* TileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileCell.swift; sourceTree = "<group>"; };
+		2BC34CB32440B74800F53DCD /* TileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileService.swift; sourceTree = "<group>"; };
+		2BC34CB62440C82500F53DCD /* SubmitTileResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitTileResponseModel.swift; sourceTree = "<group>"; };
+		2BC34CB92440E6E300F53DCD /* JSONHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONHelpers.swift; sourceTree = "<group>"; };
+		34B7BDD225D87F5CF2C53D9B /* Pods-Tiles.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tiles.debug.xcconfig"; path = "Target Support Files/Pods-Tiles/Pods-Tiles.debug.xcconfig"; sourceTree = "<group>"; };
+		419331FD0443AB5FF7C574D5 /* Pods-TilesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TilesTests.release.xcconfig"; path = "Target Support Files/Pods-TilesTests/Pods-TilesTests.release.xcconfig"; sourceTree = "<group>"; };
+		5AC248DF0CE3F6C05B4E948B /* Pods-TilesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TilesTests.debug.xcconfig"; path = "Target Support Files/Pods-TilesTests/Pods-TilesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		809C11B4FCF4C644ACAE4E61 /* Pods_TilesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TilesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6CBCDB7C743B7DAC7D9FFE0 /* Pods-Tiles-TilesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tiles-TilesUITests.release.xcconfig"; path = "Target Support Files/Pods-Tiles-TilesUITests/Pods-Tiles-TilesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BA3F2F64196BEBF0689990B5 /* Pods-Tiles-TilesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tiles-TilesUITests.debug.xcconfig"; path = "Target Support Files/Pods-Tiles-TilesUITests/Pods-Tiles-TilesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DD67F5591A92050A9D400157 /* Pods_Tiles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tiles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EF7866F84499748B0953453 /* Pods_Tiles.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC459222BA84A699CE420111 /* Pods_TilesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11852501907407231DA8DE17 /* Pods_Tiles_TilesUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +112,8 @@
 				2BC34C922440751B00F53DCD /* TilesTests */,
 				2BC34C9D2440751B00F53DCD /* TilesUITests */,
 				2BC34C7A2440751600F53DCD /* Products */,
+				4893A7BB1D3D4475306971D5 /* Pods */,
+				D10A8CEA38F758F2FDEB2C87 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +137,11 @@
 				2BC34C852440751B00F53DCD /* Assets.xcassets */,
 				2BC34C872440751B00F53DCD /* LaunchScreen.storyboard */,
 				2BC34C8A2440751B00F53DCD /* Info.plist */,
+				2BC34CAE244077E500F53DCD /* Tile.swift */,
+				2BC34CB12440B55F00F53DCD /* TileCell.swift */,
+				2BC34CB32440B74800F53DCD /* TileService.swift */,
+				2BC34CB62440C82500F53DCD /* SubmitTileResponseModel.swift */,
+				2BC34CB92440E6E300F53DCD /* JSONHelpers.swift */,
 			);
 			path = Tiles;
 			sourceTree = "<group>";
@@ -128,6 +164,29 @@
 			path = TilesUITests;
 			sourceTree = "<group>";
 		};
+		4893A7BB1D3D4475306971D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34B7BDD225D87F5CF2C53D9B /* Pods-Tiles.debug.xcconfig */,
+				076C0B1B15E2C2091334FBDC /* Pods-Tiles.release.xcconfig */,
+				BA3F2F64196BEBF0689990B5 /* Pods-Tiles-TilesUITests.debug.xcconfig */,
+				A6CBCDB7C743B7DAC7D9FFE0 /* Pods-Tiles-TilesUITests.release.xcconfig */,
+				5AC248DF0CE3F6C05B4E948B /* Pods-TilesTests.debug.xcconfig */,
+				419331FD0443AB5FF7C574D5 /* Pods-TilesTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D10A8CEA38F758F2FDEB2C87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD67F5591A92050A9D400157 /* Pods_Tiles.framework */,
+				08A9C190A3F5782E2A43979A /* Pods_Tiles_TilesUITests.framework */,
+				809C11B4FCF4C644ACAE4E61 /* Pods_TilesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +194,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2BC34CA32440751B00F53DCD /* Build configuration list for PBXNativeTarget "Tiles" */;
 			buildPhases = (
+				12E1FAF38878B314D42BB250 /* [CP] Check Pods Manifest.lock */,
 				2BC34C752440751600F53DCD /* Sources */,
 				2BC34C762440751600F53DCD /* Frameworks */,
 				2BC34C772440751600F53DCD /* Resources */,
+				66091349F8754DE364A04EDB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2BC34CA62440751B00F53DCD /* Build configuration list for PBXNativeTarget "TilesTests" */;
 			buildPhases = (
+				314F9BFA2A85068F5CCCF8C6 /* [CP] Check Pods Manifest.lock */,
 				2BC34C8B2440751B00F53DCD /* Sources */,
 				2BC34C8C2440751B00F53DCD /* Frameworks */,
 				2BC34C8D2440751B00F53DCD /* Resources */,
@@ -170,9 +232,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2BC34CA92440751B00F53DCD /* Build configuration list for PBXNativeTarget "TilesUITests" */;
 			buildPhases = (
+				830316A81B5EA88C6FD9E219 /* [CP] Check Pods Manifest.lock */,
 				2BC34C962440751B00F53DCD /* Sources */,
 				2BC34C972440751B00F53DCD /* Frameworks */,
 				2BC34C982440751B00F53DCD /* Resources */,
+				8EF00F6CD83EFA04ECF06E0A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,14 +318,122 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		12E1FAF38878B314D42BB250 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tiles-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		314F9BFA2A85068F5CCCF8C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TilesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66091349F8754DE364A04EDB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tiles/Pods-Tiles-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tiles/Pods-Tiles-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tiles/Pods-Tiles-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		830316A81B5EA88C6FD9E219 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tiles-TilesUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EF00F6CD83EFA04ECF06E0A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tiles-TilesUITests/Pods-Tiles-TilesUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tiles-TilesUITests/Pods-Tiles-TilesUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tiles-TilesUITests/Pods-Tiles-TilesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2BC34C752440751600F53DCD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2BC34C812440751600F53DCD /* ViewController.swift in Sources */,
+				2BC34CBA2440E6E300F53DCD /* JSONHelpers.swift in Sources */,
 				2BC34C7D2440751600F53DCD /* AppDelegate.swift in Sources */,
 				2BC34C7F2440751600F53DCD /* SceneDelegate.swift in Sources */,
+				2BC34CAF244077E500F53DCD /* Tile.swift in Sources */,
+				2BC34CB72440C82500F53DCD /* SubmitTileResponseModel.swift in Sources */,
+				2BC34CB22440B55F00F53DCD /* TileCell.swift in Sources */,
+				2BC34CB42440B74800F53DCD /* TileService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +442,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BC34C942440751B00F53DCD /* TilesTests.swift in Sources */,
+				2BC34CB02440917900F53DCD /* Tile.swift in Sources */,
+				2BC34CB82440C82500F53DCD /* SubmitTileResponseModel.swift in Sources */,
+				2BC34CB52440B74800F53DCD /* TileService.swift in Sources */,
+				2BC34CBB2440E6E300F53DCD /* JSONHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +608,7 @@
 		};
 		2BC34CA42440751B00F53DCD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34B7BDD225D87F5CF2C53D9B /* Pods-Tiles.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +626,7 @@
 		};
 		2BC34CA52440751B00F53DCD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 076C0B1B15E2C2091334FBDC /* Pods-Tiles.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +644,7 @@
 		};
 		2BC34CA72440751B00F53DCD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AC248DF0CE3F6C05B4E948B /* Pods-TilesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +666,7 @@
 		};
 		2BC34CA82440751B00F53DCD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 419331FD0443AB5FF7C574D5 /* Pods-TilesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +688,7 @@
 		};
 		2BC34CAA2440751B00F53DCD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA3F2F64196BEBF0689990B5 /* Pods-Tiles-TilesUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +708,7 @@
 		};
 		2BC34CAB2440751B00F53DCD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6CBCDB7C743B7DAC7D9FFE0 /* Pods-Tiles-TilesUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
