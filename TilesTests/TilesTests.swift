@@ -20,8 +20,7 @@ class TilesTests: XCTestCase {
     }
 
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        //Just for my own testing. Ideally there would be bunch of tests for TileService and basically everything else
         let tile: Tile = Tile(id: "123", label: "great label", priority: 0.0)
         let json = JSONHelpers.toJSON(obj: tile)
         XCTAssertNotNil(json)

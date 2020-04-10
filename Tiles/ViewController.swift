@@ -10,33 +10,6 @@ import UIKit
 import AlignedCollectionViewFlowLayout
 
 class ViewController: UIViewController,UICollectionViewDelegate, UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.data.count;
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell: TileCell = collectionView.dequeueReusableCell(withReuseIdentifier: "TileCell", for: indexPath) as! TileCell;
-        cell.reloadData(tile: self.data[indexPath.row])
-        return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        TileService.service.submitTileSelection(id: self.data[indexPath.row].Id) { (optionalResponse: SubmitTileResponseModel?, error: Error?) in
-            guard let response = optionalResponse else {
-                let controller = UIAlertController(title: "Error", message: "Something Wrong. Ooops", preferredStyle: .alert)
-                controller.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
-                    controller.dismiss(animated: true, completion: nil)
-                }))
-                self.show(controller, sender: nil)
-                return
-            }
-            let controller = UIAlertController(title: "Tile Tap", message: response.message, preferredStyle: .alert)
-            controller.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
-                controller.dismiss(animated: true, completion: nil)
-            }))
-            self.show(controller, sender: nil)
-        }
-    }
     
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     @IBOutlet weak var collectionView: UICollectionView!
@@ -64,6 +37,33 @@ class ViewController: UIViewController,UICollectionViewDelegate, UICollectionVie
         }
     }
 
-
+    //UICollectionView Delegate and Datasources
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.data.count;
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell: TileCell = collectionView.dequeueReusableCell(withReuseIdentifier: "TileCell", for: indexPath) as! TileCell;
+        cell.reloadData(tile: self.data[indexPath.row])
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        TileService.service.submitTileSelection(id: self.data[indexPath.row].Id) { (optionalResponse: SubmitTileResponseModel?, error: Error?) in
+            guard let response = optionalResponse else {
+                let controller = UIAlertController(title: "Error", message: "Something Wrong. Ooops", preferredStyle: .alert)
+                controller.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
+                    controller.dismiss(animated: true, completion: nil)
+                }))
+                self.show(controller, sender: nil)
+                return
+            }
+            let controller = UIAlertController(title: "Tile Tap", message: response.message, preferredStyle: .alert)
+            controller.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
+                controller.dismiss(animated: true, completion: nil)
+            }))
+            self.show(controller, sender: nil)
+        }
+    }
 }
 
